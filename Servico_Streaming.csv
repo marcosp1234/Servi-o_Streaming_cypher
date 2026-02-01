@@ -1,0 +1,735 @@
+value
+"{
+  Usuario: {
+    count: 3,
+    relationships: {
+      ASSISTIDO: {
+        count: 0,
+        properties: {
+          localizacao: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          minutos_assistidos: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          temporada_atual: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          data: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          ultima_visualizacao: {
+            existence: false,
+            type: DATE_TIME,
+            array: false,
+            indexed: false
+          },
+          vezes_assistido: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          tipo_assistencia: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          qualidade_video: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          episodio_atual: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          tempo_total_assistido: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          rating: {
+            existence: false,
+            type: FLOAT,
+            array: false,
+            indexed: false
+          },
+          recompensas: {
+            existence: false,
+            type: LIST,
+            array: true,
+            indexed: false
+          },
+          data_ultima_visualizacao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          episodios_assistidos: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          data_primeira_visualizacao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          completou: {
+            existence: false,
+            type: BOOLEAN,
+            array: false,
+            indexed: false
+          },
+          dispositivo: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          data_expiracao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          }
+        },
+        direction: out,
+        labels: [Filme, Serie]
+      }
+    },
+    type: node,
+    properties: {
+      data_cadastro: {
+        existence: false,
+        type: DATE,
+        indexed: false,
+        unique: false
+      },
+      data_nascimento: {
+        existence: false,
+        type: DATE,
+        indexed: false,
+        unique: false
+      },
+      plano: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      nome: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      id: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      email: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      pais: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      }
+    },
+    labels: []
+  },
+  Diretor: {
+    count: 4,
+    relationships: {},
+    type: node,
+    properties: {
+      nome: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      id: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      nacionalidade: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      data_nascimento: {
+        existence: false,
+        type: DATE,
+        indexed: false,
+        unique: false
+      },
+      ativo_desde: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      }
+    },
+    labels: []
+  },
+  Genero: {
+    count: 10,
+    relationships: {},
+    type: node,
+    properties: {
+      nome: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      id: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      }
+    },
+    labels: []
+  },
+  Ator: {
+    count: 5,
+    relationships: {},
+    type: node,
+    properties: {
+      nome: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      id: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      nacionalidade: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      data_nascimento: {
+        existence: false,
+        type: DATE,
+        indexed: false,
+        unique: false
+      },
+      ativo_desde: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      }
+    },
+    labels: []
+  },
+  Filme: {
+    count: 4,
+    relationships: {
+      ASSISTIDO: {
+        count: 6,
+        properties: {
+          localizacao: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          minutos_assistidos: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          temporada_atual: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          data: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          ultima_visualizacao: {
+            existence: false,
+            type: DATE_TIME,
+            array: false,
+            indexed: false
+          },
+          vezes_assistido: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          tipo_assistencia: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          qualidade_video: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          episodio_atual: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          tempo_total_assistido: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          rating: {
+            existence: false,
+            type: FLOAT,
+            array: false,
+            indexed: false
+          },
+          recompensas: {
+            existence: false,
+            type: LIST,
+            array: true,
+            indexed: false
+          },
+          data_ultima_visualizacao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          episodios_assistidos: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          data_primeira_visualizacao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          completou: {
+            existence: false,
+            type: BOOLEAN,
+            array: false,
+            indexed: false
+          },
+          dispositivo: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          data_expiracao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          }
+        },
+        direction: in,
+        labels: [Usuario]
+      }
+    },
+    type: node,
+    properties: {
+      sinopse: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      duracao_minutos: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      ano: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      titulo: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      popularidade: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      classificacao: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      id: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      nota_imdb: {
+        existence: false,
+        type: FLOAT,
+        indexed: false,
+        unique: false
+      }
+    },
+    labels: []
+  },
+  ASSISTIDO: {
+    type: relationship,
+    count: 6,
+    properties: {
+      localizacao: {
+        existence: false,
+        type: STRING,
+        array: false,
+        indexed: false
+      },
+      minutos_assistidos: {
+        existence: false,
+        type: INTEGER,
+        array: false,
+        indexed: false
+      },
+      temporada_atual: {
+        existence: false,
+        type: INTEGER,
+        array: false,
+        indexed: false
+      },
+      data: {
+        existence: false,
+        type: DATE,
+        array: false,
+        indexed: false
+      },
+      ultima_visualizacao: {
+        existence: false,
+        type: DATE_TIME,
+        array: false,
+        indexed: false
+      },
+      vezes_assistido: {
+        existence: false,
+        type: INTEGER,
+        array: false,
+        indexed: false
+      },
+      tipo_assistencia: {
+        existence: false,
+        type: STRING,
+        array: false,
+        indexed: false
+      },
+      qualidade_video: {
+        existence: false,
+        type: STRING,
+        array: false,
+        indexed: false
+      },
+      episodio_atual: {
+        existence: false,
+        type: INTEGER,
+        array: false,
+        indexed: false
+      },
+      tempo_total_assistido: {
+        existence: false,
+        type: INTEGER,
+        array: false,
+        indexed: false
+      },
+      rating: {
+        existence: false,
+        type: FLOAT,
+        array: false,
+        indexed: false
+      },
+      recompensas: {
+        existence: false,
+        type: LIST,
+        array: true,
+        indexed: false
+      },
+      data_ultima_visualizacao: {
+        existence: false,
+        type: DATE,
+        array: false,
+        indexed: false
+      },
+      episodios_assistidos: {
+        existence: false,
+        type: INTEGER,
+        array: false,
+        indexed: false
+      },
+      data_primeira_visualizacao: {
+        existence: false,
+        type: DATE,
+        array: false,
+        indexed: false
+      },
+      completou: {
+        existence: false,
+        type: BOOLEAN,
+        array: false,
+        indexed: false
+      },
+      dispositivo: {
+        existence: false,
+        type: STRING,
+        array: false,
+        indexed: false
+      },
+      data_expiracao: {
+        existence: false,
+        type: DATE,
+        array: false,
+        indexed: false
+      }
+    }
+  },
+  Serie: {
+    count: 3,
+    relationships: {
+      ASSISTIDO: {
+        count: 6,
+        properties: {
+          localizacao: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          minutos_assistidos: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          temporada_atual: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          data: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          ultima_visualizacao: {
+            existence: false,
+            type: DATE_TIME,
+            array: false,
+            indexed: false
+          },
+          vezes_assistido: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          tipo_assistencia: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          qualidade_video: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          episodio_atual: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          tempo_total_assistido: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          rating: {
+            existence: false,
+            type: FLOAT,
+            array: false,
+            indexed: false
+          },
+          recompensas: {
+            existence: false,
+            type: LIST,
+            array: true,
+            indexed: false
+          },
+          data_ultima_visualizacao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          episodios_assistidos: {
+            existence: false,
+            type: INTEGER,
+            array: false,
+            indexed: false
+          },
+          data_primeira_visualizacao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          },
+          completou: {
+            existence: false,
+            type: BOOLEAN,
+            array: false,
+            indexed: false
+          },
+          dispositivo: {
+            existence: false,
+            type: STRING,
+            array: false,
+            indexed: false
+          },
+          data_expiracao: {
+            existence: false,
+            type: DATE,
+            array: false,
+            indexed: false
+          }
+        },
+        direction: in,
+        labels: [Usuario]
+      }
+    },
+    type: node,
+    properties: {
+      sinopse: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      temporadas: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      ano_lancamento: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      titulo: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      episodios: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      popularidade: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      classificacao: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      },
+      id: {
+        existence: false,
+        type: INTEGER,
+        indexed: false,
+        unique: false
+      },
+      nota_imdb: {
+        existence: false,
+        type: FLOAT,
+        indexed: false,
+        unique: false
+      },
+      status: {
+        existence: false,
+        type: STRING,
+        indexed: false,
+        unique: false
+      }
+    },
+    labels: []
+  }
+}"
